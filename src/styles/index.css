@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@500&display=swap');
+
+body{
+    font-family: 'Onest', sans-serif;
+    background-color: white;
+    padding:none;
+    background-color: #250902;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: #800e13;
+    color:white;
+    padding: 10px;
+    position: sticky;
+    border-radius: 5px;
+    box-shadow: 0px 5px #201b1b;
+}
+.header h1{
+    font-size: 50px;
+    text-align: center;
+}
+.header p{
+    font-style: italic;
+}
+.navbar{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #640d14;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding:10px;
+}
+.navbar li{
+    font-size: 25px;
+    padding:10px;
+    border-radius: 5px;
+    transition: 0.15s ease-in-out;
+}
+.navbar li:hover{
+    transform: translate(-2px, -2px);
+    background-color: #800e13;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+.introduction{
+    padding: 50px;
+    color: white;
+
+}
+.introduction h2{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+.introduction p{
+    display: flex;
+    justify-content: right;
+    width: 60%;
+}
+.home-content{
+    display: flex;
+    color: white;
+}
+.opinion-of-the-day{
+    width: 70%;
+    padding: 10px;
+    background-color: #640d14;
+    margin: 5px;
+    border-radius: 5px;
+
+    overflow-wrap: normal;
+}
+.form{
+    width:30%;
+    padding: 10px;
+    background-color: #640d14;
+    margin: 5px; 
+    border-radius: 5px;
+}
+.footer{
+    color:white;
+}
