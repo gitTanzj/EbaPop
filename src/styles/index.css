@@ -4,12 +4,11 @@ html{
 }
 body{
     font-family: 'Onest', sans-serif;
-    background-color: white;
+    background-color: #293b46;
     padding:none;
-    background-color: #250902;
-    padding: 20px;
+    color:white;
 }
-*{
+* {
     margin: 0;
     padding:0;
     box-sizing: border-box;
@@ -17,11 +16,9 @@ body{
 .header{
     display: flex;
     justify-content: center;
-    background-color: #800e13;
-    color:white;
-    padding: 50px;
-    border-radius: 5px;
-    box-shadow: 0px 5px #201b1b;
+    padding: 30px;
+    background-color: #1c2730;
+    cursor: default;
 }
 .header h1{
     font-size: 50px;
@@ -34,9 +31,7 @@ body{
     padding: 20px;
     display: flex;
     justify-content: center;
-    background-color: #640d14;
-    border-radius: 5px;
-    box-shadow: 0px 5px #201b1b;
+    position: sticky;
 }
 .navbar ul{
     display: flex;
@@ -48,20 +43,19 @@ body{
 .navbar li{
     font-size: 25px;
     padding:10px;
-    border-radius: 10px;
-    transition: 0.15s;
-}
-.navbar li:hover{
-    background-color: #800e13;
+    border-radius: 5px;
 }
 .navbar a{
-    color: white;
     text-decoration: none;
     font-size: larger;
+    transition: 0.1s;
+    color:white;
+}
+.navbar a:hover{
+    color: grey;
 }
 .introduction{
     padding: 100px;
-    color: white;
 }
 .introduction h2{
     font-size: 25px;
@@ -75,23 +69,26 @@ body{
 }
 .home-content{
     display: flex;
-    color: white;
 }
 .opinion-of-the-day{
     overflow: auto;
     width: 70%;
     padding: 10px;
-    background-color: #640d14;
+    border: 2px solid #1c2730;
     margin: 5px;
     border-radius: 5px;
     overflow-wrap: normal;
+    background-color: #1c2730;
 }
 .form{
     width:30%;
     padding: 10px;
-    background-color: #640d14;
     margin: 5px; 
     border-radius: 5px;
+    border: 2px solid #1c2730;
+    display: flex;
+    flex-direction: column;
+    background-color: #1c2730;
 }
 .form h2{
     text-align: center;
@@ -103,41 +100,66 @@ body{
     font-size: 20px;
 }
 .form input{
-    border:none;
-    border-bottom: 2px solid rgb(255,255,255,0.5);
+    border:2px solid #1c2730;
+    border-bottom: 2px solid white;
+    color: white;
     font-family: 'Onest', sans-serif;
-    padding: 5px;
+    padding: 10px;
+    margin: 5px;
     margin-bottom: 10px;
     font-size:14px;
     outline:none;
     background-color: inherit;
-    color:white;
+    transition: 0.15s;
+    max-height: max-content;
+}
+.form input:focus{
+    border: 2px solid white;
+    border-radius: 3px;
 }
 textarea{
-    border:none;
-    border-bottom: 2px solid rgb(255,255,255,0.5);
+    border:2px solid #1c2730;
+    border-bottom: 2px solid white;
+    color: white;
     font-size: 14px;
-    padding: 5px;
+    padding: 10px;
+    margin: 5px;
     outline:none;
     font-family: 'Onest', sans-serif;
     resize: none;
     background-color: inherit;
-    color:white;
+    transition: 0.15s;
+}
+textarea:focus{
+    border: 2px solid white;
+    border-radius: 3px;
 }
 #form-submit{
+    border: 2px solid #2a83b7;
     margin-top:10px;
     width: 40%;
     padding: 10px;
     border-radius: 5px;
-    border: 0px;
-    background-color: white;
-    color:black;
+    background-color: #1c2730;
     cursor: pointer;
     transition: 0.1s;
 }
 #form-submit:hover{
-    background-color: #569cc5;
-    color:white;
+    border: 2px solid white;
+    background-color: #2a83b7;
+}
+.opinions-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.opinion{
+    background-color: #1c2730;
+    margin:5px;
+    padding: 20px;
+    border-radius: 5px;
 }
 .footer{
     color:white;
