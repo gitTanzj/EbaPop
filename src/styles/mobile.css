@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@500&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Onest', sans-serif;
+    background-color: #293b46;
+    padding:none;
+    color:white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: #1c2730;
+    cursor: default;
+}
+.header h1{
+    font-size: 20px;
+    text-align: center;
+}
+.header p{
+    font-style: italic;
+    font-size: 10px;
+}
+.navbar{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding:10px;
+}
+.navbar li{
+    font-size: 18px;
+    padding:10px;
+    border-radius: 5px;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: larger;
+    transition: 0.1s;
+    color:white;
+}
+.navbar a:hover{
+    color: grey;
+}
+.introduction{
+    padding: 100px;
+}
+.introduction h2{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;;
+}
+.introduction p{
+    display: flex;
+    justify-content: right;
+    width: 60%;
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.opinion-of-the-day{
+    overflow: auto;
+    width: 95%;
+    padding: 10px 20px 40px 20px;
+    border: 2px solid #1c2730;
+    margin: 5px;
+    border-radius: 5px;
+    overflow-wrap: normal;
+    background-color: #1c2730;
+}
+.opinion-of-the-day h2{
+    text-align: center;
+    font-size: 36px;
+    padding: 20px;
+}
+.opinion-of-the-day article{
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 20px;
+
+}
+.form{
+    width:95%;
+    padding: 10px;
+    margin: 5px; 
+    border-radius: 5px;
+    border: 2px solid #1c2730;
+    display: flex;
+    flex-direction: column;
+    background-color: #1c2730;
+    overflow: hidden;
+}
+.form h2{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.form label{
+    padding: 5px;
+    font-size: 20px;
+}
+.text-input{
+    border:2px solid #1c2730;
+    border-bottom: 2px solid white;
+    color: white;
+    font-family: 'Onest', sans-serif;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 10px;
+    font-size:14px;
+    outline:none;
+    background-color: inherit;
+    transition: 0.15s;
+    max-height: max-content;
+}
+.text-input:focus{
+    border: 2px solid white;
+    border-radius: 3px;
+}
+textarea{
+    border:2px solid #1c2730;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    margin: 5px;
+    outline:none;
+    font-family: 'Onest', sans-serif;
+    resize: none;
+    background-color: inherit;
+    transition: 0.15s;
+}
+textarea:focus{
+    border: 2px solid white;
+    border-radius: 3px;
+}
+.btn{
+    border: 2px solid #2a83b7;
+    margin-top:10px;
+    width: 40%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: inherit;
+    cursor: pointer;
+    transition: 0.1s;
+    color: white;
+    font-weight: 1000;
+    font-size: 14px;
+}
+.btn:hover{
+    border: 2px solid white;
+    background-color: #2a83b7;
+}
+.opinions-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+    width: 100%;
+}
+.opinion{
+    background-color: #1c2730;
+    margin:5px;
+    padding: 20px;
+    border-radius: 5px;
+    width: 95%;
+}
+#contact-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    text-align: center;
+    background-color: #1c2730;
+    width: 95%;
+    margin:5px;
+    border-radius: 5px;
+    padding: 50px;
+}
+.container h1{
+    margin-bottom: 20px;
+}
+.form-group{
+    margin-bottom: 5px;
+}
+.footer{
+    color:white;
+    margin-top: auto;
+    background-color: #1c2730;
+    text-align: center;
+    padding: 15px;
+}
