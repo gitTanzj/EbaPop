@@ -7,6 +7,9 @@ body{
     background-color: #293b46;
     padding:none;
     color:white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 * {
     margin: 0;
@@ -60,7 +63,7 @@ body{
 .introduction h2{
     font-size: 25px;
     display: flex;
-    justify-content: center;
+    justify-content: center;;
 }
 .introduction p{
     display: flex;
@@ -73,12 +76,23 @@ body{
 .opinion-of-the-day{
     overflow: auto;
     width: 70%;
-    padding: 10px;
+    padding: 10px 100px 10px 100px;
     border: 2px solid #1c2730;
     margin: 5px;
     border-radius: 5px;
     overflow-wrap: normal;
     background-color: #1c2730;
+}
+.opinion-of-the-day h2{
+    text-align: center;
+    font-size: 36px;
+    padding: 20px;
+}
+.opinion-of-the-day article{
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 20px;
+
 }
 .form{
     width:30%;
@@ -89,6 +103,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #1c2730;
+    overflow: hidden;
 }
 .form h2{
     text-align: center;
@@ -99,7 +114,7 @@ body{
     padding: 5px;
     font-size: 20px;
 }
-.form input{
+.text-input{
     border:2px solid #1c2730;
     border-bottom: 2px solid white;
     color: white;
@@ -113,7 +128,7 @@ body{
     transition: 0.15s;
     max-height: max-content;
 }
-.form input:focus{
+.text-input:focus{
     border: 2px solid white;
     border-radius: 3px;
 }
@@ -134,17 +149,20 @@ textarea:focus{
     border: 2px solid white;
     border-radius: 3px;
 }
-#form-submit{
+.btn{
     border: 2px solid #2a83b7;
     margin-top:10px;
     width: 40%;
     padding: 10px;
     border-radius: 5px;
-    background-color: #1c2730;
+    background-color: inherit;
     cursor: pointer;
     transition: 0.1s;
+    color: white;
+    font-weight: 1000;
+    font-size: 14px;
 }
-#form-submit:hover{
+.btn:hover{
     border: 2px solid white;
     background-color: #2a83b7;
 }
@@ -154,13 +172,39 @@ textarea:focus{
     align-items: center;
     flex-direction: column;
     overflow-y: scroll;
+    width: 100%;
 }
 .opinion{
     background-color: #1c2730;
     margin:5px;
     padding: 20px;
     border-radius: 5px;
+    width: 60%;
+}
+#contact-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    text-align: center;
+    background-color: #1c2730;
+    width: 60%;
+    margin:5px;
+    border-radius: 5px;
+    padding: 50px;
+}
+.container h1{
+    margin-bottom: 20px;
+}
+.form-group{
+    margin-bottom: 5px;
 }
 .footer{
     color:white;
+    margin-top: auto;
+    background-color: #1c2730;
+    text-align: center;
+    padding: 15px;
 }
